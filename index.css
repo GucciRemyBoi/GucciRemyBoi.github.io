@@ -1,0 +1,302 @@
+/* !------- Navbar -------! */
+
+header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    height: 70px;
+    width: 100%;
+    transition: 0.3s;
+    backdrop-filter: blur(5px);
+    z-index: 1;
+  }
+
+body{
+  background-color: #242424;
+}
+
+nav {
+    margin: auto;
+  }
+  
+nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 20px;
+    color: #FFFFFF;
+  }
+  
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+    justify-content: center;
+}
+  
+li a {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+}
+  
+li a:hover {
+    color: #C3423F;
+    transition: 0.5s;
+}
+
+/* !------- Social Bar -------! */
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #6F8695;
+  transition: 0.5s;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.github{
+  background: #040404;
+  color: white;
+}
+
+/* !------- Hero -------! */
+
+.picture-div{
+  display: grid;
+  place-items: center;
+}
+
+.section__hero {
+    display: flex;
+    margin: 1rem;
+    margin-top: 5rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    gap: 2rem;
+    color: #FFFFFF;
+  }
+  
+  .introduction-span {
+    font-weight: bold;
+    color: var(--primary-span-color);
+  }
+  
+  .heading-introduction-div h1 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    text-align: center;
+  }
+  
+  .heading-introduction-div h1 span {
+    font-size: clamp(3rem, 6vw, 5rem);
+    color: #C3423F;
+  }
+  
+  .introduction-paragraph-div p {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    color: #A1A1A1;
+    text-align: center;
+  }
+
+/* !------- Projects -------! */
+
+.projects-section{
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+
+.projects-section-heading-div{
+  display: block;
+  text-align: center;
+  margin: 1rem 0rem;
+}
+
+.projects-section h1{
+  font-weight: bold;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  color: #FFFFFF;
+}
+
+/* !------- Projects Cards -------! */
+
+.card-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  min-height: 17rem;
+  margin-bottom: 40px;
+}
+
+.projects-heading-div h2{
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #C3423F;
+}
+
+.projects-img{
+  display: none;
+}
+
+.projects-link-div{
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.projects-github{
+  font-size: 30px;
+}
+
+.projects-info-paragraph {
+  font-size: clamp(1.1rem, 4vw, 1.3rem);
+  color: var(--secondary-font-color);
+  text-align: center;
+  color: #A1A1A1;
+}
+
+.projects-info-paragraph span {
+  font-size: clamp(1.2rem, 4vw, 1.6rem);
+  color: #C3423F;
+  font-weight: bold;
+}
+
+/* !------- Skills Section -------! */
+
+.skills-section{
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+
+.skills-section-heading-div{
+  display: block;
+  text-align: center;
+  margin: 1rem 0rem;
+}
+
+.skills-section h1{
+  font-weight: bold;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  color: #FFFFFF;
+}
+
+.skills-section h3{
+  margin: 5px;
+}
+
+.skills-section-heading-div{
+  width: 500px;
+  margin: 60px auto;
+  color: #FFFFFF;
+  padding: 20px;
+}
+
+.skills-section-heading-div li{
+  margin: 20px 0;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.bar{
+  background-color: #6F8695;
+  display: block;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.bar:hover{
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span{
+  height: 20px;
+  float: left;
+  background: linear-gradient(135deg, rgba(236,0,140,1) 0%, rgba(252, 103, 103, 1)100%);
+}
+
+.html{
+  width: 85%;
+  animation: html 3s;
+}
+
+.css{
+  width: 72%;
+  animation: css 3s;
+}
+
+.javascript{
+  width: 66%;
+  animation: javascript 3s;
+}
+
+.python{
+  width: 83%;
+  animation: python 3s;
+}
+
+@keyframes html{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 85%;
+  }
+}
+
+@keyframes css{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 72%;
+  }
+}
+
+@keyframes javascript{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 66%;
+  }
+}
+
+@keyframes python{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 83%;
+  }
+}
